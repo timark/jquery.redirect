@@ -17,6 +17,13 @@ A simple HTTP POST and GET Redirection Plugin for jQuery
  * @param {string} target - (optional) The target of the form. If you set "_blank" will open the url in a new window.
  */
 $.redirect(url, [values, [method, [target]]])
+
+/* Example */
+var params = { 
+       "FormInputKey1": "KeyValue1",
+       "FormInputKey2": "KeyValue2"
+             }
+ $.redirect("/myController/myMethod", params, "post", "_self")
  ```
 
 ## How does it work?
@@ -36,4 +43,4 @@ Just download jquery.rediect.js and include it in your html after jquery.js
      <!-- your content -->
  </body>
  </html>
- ```
+
